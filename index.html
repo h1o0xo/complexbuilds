@@ -1,0 +1,1943 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kit de Ferramentas 226 Peças com Parafusadeira 12V — ComplexBuilds</title>
+  <meta name="description" content="Kit completo de 226 ferramentas com parafusadeira 12V, maleta resistente, brocas, bits e acessórios. Ideal para casa, obra e profissionais.">
+  <meta property="og:title" content="Kit de Ferramentas 226 Peças — ComplexBuilds">
+  <meta property="og:description" content="Kit completo com parafusadeira 12V, 226 peças, maleta resistente. Frete grátis.">
+  <meta property="og:image" content="assets/prod-1.jpg">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow:      #FFD100;
+      --yellow-dark: #C9A500;
+      --yellow-pale: #FFF3A3;
+      --black:       #111111;
+      --dark:        #161616;
+      --dark2:       #1e1e1e;
+      --dark3:       #272727;
+      --dark4:       #303030;
+      --light:       #f5f5f5;
+      --muted:       #9a9a9a;
+      --border:      #2e2e2e;
+      --green:       #25D366;
+      --green-dark:  #1da855;
+      --red:         #e53e3e;
+      --radius:      8px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--dark);
+      color: var(--light);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    img, svg { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    button { cursor: pointer; font-family: inherit; border: none; outline: none; }
+
+    /* ── SVG UTILS ── */
+    .svg-icon {
+      display: inline-flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .svg-icon svg { width: 100%; height: 100%; }
+
+    /* ── ANNOUNCEMENT BAR ── */
+    .announce-bar {
+      background: repeating-linear-gradient(
+        -45deg,
+        var(--yellow) 0px, var(--yellow) 16px,
+        var(--black) 16px, var(--black) 32px
+      );
+      color: var(--black);
+      text-align: center;
+      padding: 9px 16px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-shadow: 0 0 8px rgba(255,255,255,0.5);
+    }
+    .announce-bar span {
+      background: var(--black);
+      color: var(--yellow);
+      padding: 2px 12px;
+      border-radius: 3px;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--black);
+      border-bottom: 3px solid var(--yellow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .logo img { width: 44px; height: 44px; }
+    .logo-text {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--light);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+    .logo-text span { color: var(--yellow); }
+    .header-spacer { flex: 1; }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .header-nav a {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+    .header-nav a:hover { color: var(--yellow); }
+    .nav-icon { width: 16px; height: 16px; }
+
+    /* ── URGENCY BAR ── */
+    .urgency-bar {
+      background: var(--red);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      color: #fff;
+    }
+    .urgency-icon { width: 18px; height: 18px; color: #fff; }
+    .timer-badge {
+      background: rgba(0,0,0,0.3);
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-family: 'Barlow Condensed', monospace;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    /* ── TRUST STRIP (reformulado) ── */
+    .trust-strip {
+      background: var(--dark2);
+      border-bottom: 1px solid var(--border);
+    }
+    .trust-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .trust-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      padding: 16px 0;
+    }
+    @media (min-width: 640px) { .trust-cards { grid-template-columns: repeat(4, 1fr); } }
+    .trust-card {
+      background: var(--dark3);
+      border: 1px solid var(--border);
+      border-top: 2px solid var(--yellow);
+      border-radius: 6px;
+      padding: 12px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .trust-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255,209,0,0.3);
+    }
+    .trust-icon {
+      width: 30px; height: 30px;
+      color: var(--yellow);
+      flex-shrink: 0;
+    }
+    .trust-label { font-weight: 700; font-size: 12px; color: var(--light); line-height: 1.3; }
+    .trust-sub   { font-size: 11px; color: var(--muted); }
+
+    /* ── PRODUCT SECTION ── */
+    .product-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px 20px;
+      display: grid;
+      gap: 40px;
+    }
+    @media (min-width: 768px) { .product-section { grid-template-columns: 1fr 1fr; } }
+
+    .gallery-wrap { position: relative; }
+    .gallery-main {
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      background: #fff;
+      aspect-ratio: 1;
+      overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+      padding: 16px;
+      position: relative;
+    }
+    .gallery-main::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 4px; background: var(--yellow);
+    }
+    .gallery-main img {
+      width: 100%; height: 100%;
+      object-fit: contain;
+      transition: opacity 0.2s;
+    }
+    .gallery-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: rgba(17,17,17,0.7);
+      border: 1px solid rgba(255,209,0,0.4);
+      color: var(--yellow);
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      transition: background 0.2s, transform 0.2s;
+      backdrop-filter: blur(2px);
+    }
+    .gallery-nav:hover { background: rgba(17,17,17,0.9); transform: translateY(-50%) scale(1.08); }
+    .gallery-nav.prev { left: 12px; }
+    .gallery-nav.next { right: 12px; }
+    .gallery-nav svg { width: 20px; height: 20px; }
+    .gallery-nav:focus-visible { outline: 2px solid var(--yellow); outline-offset: 2px; }
+
+    .gallery-thumbs { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+    .thumb {
+      width: 72px; height: 72px;
+      border: 2px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff; padding: 4px;
+      cursor: pointer;
+      transition: border-color 0.2s;
+      flex-shrink: 0;
+    }
+    .thumb img { width: 100%; height: 100%; object-fit: contain; }
+    .thumb.active { border-color: var(--yellow); box-shadow: 0 0 0 1px var(--yellow); }
+    .thumb:hover:not(.active) { border-color: rgba(255,209,0,0.4); }
+
+    .buy-box h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(22px, 3vw, 30px);
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--light);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .badge svg { width: 12px; height: 12px; }
+    .badge-yellow { background: var(--yellow); color: var(--black); }
+    .badge-red    { background: var(--red); color: #fff; }
+    .badge-black  { background: var(--dark4); color: var(--yellow); border: 1px solid rgba(255,209,0,0.3); }
+
+    .specs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px; margin-top: 20px;
+    }
+    @media (min-width: 480px) { .specs-grid { grid-template-columns: repeat(3, 1fr); } }
+    .spec-chip {
+      background: var(--dark3);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px 12px;
+      border-left: 3px solid var(--yellow);
+    }
+    .spec-chip-label { color: var(--muted); font-size: 11px; margin-bottom: 3px; }
+    .spec-chip-val   { font-weight: 700; color: var(--light); font-size: 14px; }
+
+    .price-block { margin-top: 24px; }
+    .price-from { font-size: 13px; color: var(--muted); }
+    .price-from s { color: var(--muted); }
+    .price-main { display: flex; align-items: baseline; gap: 12px; margin-top: 4px; }
+    .price-current {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 52px; font-weight: 900;
+      color: var(--yellow);
+      letter-spacing: -1px; line-height: 1;
+    }
+    .price-discount {
+      font-size: 14px; font-weight: 700;
+      color: var(--red); background: rgba(229,62,62,0.1);
+      padding: 3px 8px; border-radius: 4px;
+    }
+    .price-note { font-size: 12px; color: var(--yellow); font-weight: 600; margin-top: 6px; }
+    .price-installments { font-size: 13px; color: var(--muted); margin-top: 4px; }
+    .price-installments strong { color: var(--light); }
+
+    .purchase-row { display: flex; align-items: center; gap: 12px; margin-top: 24px; }
+    .qty-control {
+      display: flex; align-items: center;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .qty-btn {
+      background: var(--dark3); color: var(--light);
+      width: 38px; height: 50px;
+      font-size: 18px;
+      display: flex; align-items: center; justify-content: center;
+      border: none; transition: background 0.2s;
+    }
+    .qty-btn:hover { background: var(--dark4); }
+    .qty-num {
+      width: 46px; text-align: center;
+      font-weight: 700; font-size: 16px;
+      background: var(--dark2); color: var(--light);
+      border: none; height: 50px; outline: none;
+    }
+
+    /* GATEWAY PAYMENT */
+    #gateway-wrapper { flex: 1; }
+    .btn-comprar {
+      width: 100%; height: 50px;
+      background: var(--yellow); color: var(--black);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 20px; font-weight: 900;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border-radius: var(--radius);
+      border: none; cursor: pointer;
+      transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      box-shadow: 0 4px 16px rgba(255,209,0,0.25);
+    }
+    .btn-comprar:hover { background: var(--yellow-dark); box-shadow: 0 6px 24px rgba(255,209,0,0.4); }
+    .btn-comprar:active { transform: scale(0.98); }
+    .btn-comprar svg { width: 18px; height: 18px; }
+
+    .btn-whatsapp {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      width: 100%; height: 46px;
+      background: var(--green); color: #fff;
+      font-weight: 700; font-size: 14px;
+      border-radius: var(--radius); margin-top: 10px;
+      transition: background 0.2s;
+    }
+    .btn-whatsapp:hover { background: var(--green-dark); }
+
+    .shipping-box {
+      background: var(--dark3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px; margin-top: 20px;
+    }
+    .shipping-box-title { font-weight: 700; font-size: 13px; color: var(--light); margin-bottom: 10px; }
+    .cep-row { display: flex; gap: 8px; }
+    .cep-input {
+      flex: 1;
+      background: var(--dark2); border: 1px solid var(--border);
+      border-radius: 6px; padding: 8px 12px;
+      font-size: 13px; color: var(--light);
+      outline: none; font-family: inherit;
+    }
+    .cep-input:focus { border-color: var(--yellow); }
+    .cep-input::placeholder { color: var(--muted); }
+    .btn-cep {
+      background: var(--yellow); color: var(--black);
+      border-radius: 6px; padding: 8px 16px;
+      font-size: 12px; font-weight: 800;
+      border: none; cursor: pointer;
+      transition: background 0.2s; white-space: nowrap;
+    }
+    .btn-cep:hover { background: var(--yellow-dark); }
+    #cep-result { font-size: 12px; color: var(--muted); margin-top: 8px; min-height: 18px; }
+
+    .security-row {
+      display: flex; align-items: center; justify-content: center;
+      gap: 16px; flex-wrap: wrap;
+      margin-top: 20px; padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+    .sec-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--muted); }
+    .sec-item svg { width: 13px; height: 13px; color: var(--yellow); }
+
+    /* ── TABS ── */
+    .tabs-section { background: var(--dark2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .tabs-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .tab-nav { display: flex; border-bottom: 1px solid var(--border); overflow-x: auto; scrollbar-width: none; }
+    .tab-nav::-webkit-scrollbar { display: none; }
+    .tab-btn {
+      padding: 16px 24px; font-size: 14px; font-weight: 600;
+      color: var(--muted); background: transparent;
+      border: none; border-bottom: 3px solid transparent;
+      margin-bottom: -1px; white-space: nowrap;
+      transition: color 0.2s, border-color 0.2s; cursor: pointer;
+    }
+    .tab-btn.active { color: var(--yellow); border-bottom-color: var(--yellow); }
+    .tab-btn:hover:not(.active) { color: var(--light); }
+    .tab-content { display: none; padding: 32px 0 40px; }
+    .tab-content.active { display: block; }
+
+    .desc-intro { font-size: 11px; font-weight: 700; color: var(--yellow); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; }
+    .desc-title { font-family: 'Barlow Condensed', sans-serif; font-size: 26px; font-weight: 800; text-transform: uppercase; color: var(--light); margin-bottom: 16px; letter-spacing: 0.5px; }
+    .desc-lead { font-size: 15px; color: var(--muted); margin-bottom: 24px; line-height: 1.7; }
+
+    .features-grid { display: grid; gap: 12px; margin-bottom: 24px; }
+    @media (min-width: 640px) { .features-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 900px) { .features-grid { grid-template-columns: repeat(3, 1fr); } }
+    .feature-card {
+      background: var(--dark3); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 16px;
+      border-left: 3px solid var(--yellow);
+      transition: border-color 0.2s;
+    }
+    .feature-card:hover { border-left-color: var(--yellow-dark); }
+    .feature-card-title { font-weight: 700; font-size: 14px; color: var(--light); margin-bottom: 6px; }
+    .feature-card-desc { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+    .includes-list { list-style: none; display: grid; gap: 10px; }
+    @media (min-width: 640px) { .includes-list { grid-template-columns: repeat(2, 1fr); } }
+    .includes-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--light); }
+    .check-icon {
+      width: 20px; height: 20px; flex-shrink: 0;
+      background: var(--yellow); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin-top: 2px;
+    }
+    .check-icon svg { width: 11px; height: 11px; color: var(--black); }
+
+    .guarantee-box {
+      background: var(--dark3); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 24px;
+      display: flex; gap: 20px; align-items: flex-start; max-width: 600px;
+    }
+    .guarantee-icon {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: rgba(255,209,0,0.1); border: 2px solid var(--yellow);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; color: var(--yellow);
+    }
+    .guarantee-icon svg { width: 26px; height: 26px; }
+    .guarantee-title { font-weight: 700; font-size: 16px; color: var(--light); margin-bottom: 8px; }
+    .guarantee-text { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+    .spec-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border); }
+    .spec-row:last-child { border-bottom: none; }
+    .spec-row-label { color: var(--muted); font-size: 14px; }
+    .spec-row-val { font-weight: 600; font-size: 14px; }
+
+    /* ── REVIEWS ── */
+    .reviews-section { max-width: 1200px; margin: 0 auto; padding: 48px 20px; }
+    .section-header { text-align: center; margin-bottom: 40px; }
+    .section-title { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(26px, 4vw, 36px); font-weight: 800; text-transform: uppercase; color: var(--light); letter-spacing: 1px; }
+    .rating-summary { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 12px; }
+    .stars-row { color: var(--yellow); font-size: 22px; letter-spacing: 3px; }
+    .rating-num { font-family: 'Barlow Condensed', sans-serif; font-size: 28px; font-weight: 900; color: var(--light); }
+    .rating-count { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+    .reviews-grid { display: grid; gap: 16px; }
+    @media (min-width: 640px) { .reviews-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 960px) { .reviews-grid { grid-template-columns: repeat(3, 1fr); } }
+    .review-card { background: var(--dark2); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; transition: border-color 0.2s; }
+    .review-card:hover { border-color: rgba(255,209,0,0.25); }
+    .review-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .review-avatar { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid var(--border); }
+    .review-name { font-weight: 700; font-size: 14px; color: var(--light); }
+    .review-date { font-size: 11px; color: var(--muted); }
+    .review-stars { color: var(--yellow); font-size: 14px; margin-bottom: 10px; letter-spacing: 2px; }
+    .review-text { font-size: 13px; color: var(--muted); line-height: 1.6; }
+    .review-verified { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--green); font-weight: 600; margin-top: 10px; }
+    .review-verified svg { width: 12px; height: 12px; }
+
+    .load-more-wrap { text-align: center; margin-top: 28px; }
+    .btn-load-more { background: transparent; border: 2px solid var(--yellow); color: var(--yellow); padding: 10px 32px; border-radius: var(--radius); font-weight: 700; font-size: 14px; cursor: pointer; transition: background 0.2s, color 0.2s; }
+    .btn-load-more:hover { background: var(--yellow); color: var(--black); }
+
+    /* ── FOOTER ── */
+    footer { background: var(--black); border-top: 3px solid var(--yellow); margin-top: 20px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; display: grid; gap: 32px; }
+    @media (min-width: 640px) { .footer-inner { grid-template-columns: repeat(3, 1fr); } }
+    .footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .footer-logo img { width: 36px; height: 36px; }
+    .footer-logo-text { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 800; letter-spacing: 1px; color: var(--light); }
+    .footer-logo-text span { color: var(--yellow); }
+    .footer-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
+    .footer-section-title { font-weight: 700; font-size: 14px; color: var(--yellow); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-links li { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+    .footer-links svg { width: 14px; height: 14px; color: var(--yellow); flex-shrink: 0; }
+    .footer-bottom { border-top: 1px solid var(--border); padding: 16px 20px; text-align: center; font-size: 12px; color: var(--muted); }
+    .footer-bottom span { color: var(--yellow); }
+
+    .fab-whatsapp { position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; border-radius: 50%; background: var(--green); color: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(0,0,0,0.5); z-index: 200; transition: background 0.2s, transform 0.2s; }
+    .fab-whatsapp:hover { background: var(--green-dark); transform: scale(1.08); }
+    .fab-whatsapp svg { width: 28px; height: 28px; }
+
+    .sticky-buy { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--black); border-top: 2px solid var(--yellow); padding: 12px 16px; z-index: 150; gap: 12px; align-items: center; }
+    @media (max-width: 767px) { .sticky-buy { display: flex; } }
+    .sticky-price { flex: 1; font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 900; color: var(--yellow); }
+    .sticky-price small { display: block; font-size: 11px; color: var(--muted); font-family: 'Inter', sans-serif; font-weight: 400; }
+    .sticky-btn { background: var(--yellow); color: var(--black); font-family: 'Barlow Condensed', sans-serif; font-size: 16px; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; border-radius: 6px; padding: 10px 24px; border: none; cursor: pointer; }
+
+    /* ── POPUP DIA DOS PAIS ── */
+    .popup-overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(4px); z-index: 9998;
+      display: flex; align-items: center; justify-content: center;
+      padding: 20px; opacity: 0; transition: opacity 0.35s; pointer-events: none;
+    }
+    .popup-overlay.show { opacity: 1; pointer-events: all; }
+    .popup-box { background: var(--dark2); border: 2px solid var(--yellow); border-radius: 14px; max-width: 440px; width: 100%; position: relative; overflow: hidden; transform: translateY(24px) scale(0.96); transition: transform 0.35s cubic-bezier(.22,1,.36,1); box-shadow: 0 24px 60px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,209,0,0.1); }
+    .popup-overlay.show .popup-box { transform: translateY(0) scale(1); }
+    .popup-top-stripe {
+      background: repeating-linear-gradient(-45deg, var(--yellow) 0px, var(--yellow) 12px, var(--black) 12px, var(--black) 24px);
+      height: 8px;
+    }
+    .popup-body { padding: 28px 28px 24px; text-align: center; }
+    .popup-icon { width: 60px; height: 60px; margin: 0 auto 8px; color: var(--yellow); }
+    .popup-tag { display: inline-block; background: var(--yellow); color: var(--black); font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 900; letter-spacing: 3px; text-transform: uppercase; padding: 4px 14px; border-radius: 100px; margin-bottom: 12px; }
+    .popup-title { font-family: 'Barlow Condensed', sans-serif; font-size: 28px; font-weight: 900; text-transform: uppercase; line-height: 1.1; color: var(--light); margin-bottom: 8px; }
+    .popup-title span { color: var(--yellow); }
+    .popup-subtitle { font-size: 13px; color: var(--muted); margin-bottom: 22px; line-height: 1.5; }
+    .popup-discount-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(229,62,62,0.15); border: 1px solid rgba(229,62,62,0.4); color: var(--red); font-size: 14px; font-weight: 700; padding: 4px 12px; border-radius: 6px; margin-bottom: 18px; }
+    .popup-discount-badge svg { width: 14px; height: 14px; }
+    .coupon-box { background: var(--dark3); border: 2px dashed var(--yellow); border-radius: 10px; padding: 14px 20px; margin-bottom: 20px; position: relative; cursor: pointer; }
+    .coupon-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+    .coupon-code { font-family: 'Barlow Condensed', sans-serif; font-size: 32px; font-weight: 900; color: var(--yellow); letter-spacing: 4px; cursor: pointer; user-select: all; }
+    .coupon-copy-hint { font-size: 11px; color: var(--muted); margin-top: 6px; }
+    .coupon-copy-hint.copied { color: var(--green); font-weight: 700; }
+    .popup-live { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; color: var(--muted); margin-bottom: 16px; }
+    .dot-live { width: 8px; height: 8px; border-radius: 50%; background: var(--green); animation: blink 1.2s ease-in-out infinite; }
+    @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0.3; } }
+    .btn-popup-cta { display: block; width: 100%; background: var(--yellow); color: var(--black); font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; border: none; border-radius: 8px; padding: 14px; cursor: pointer; transition: background 0.2s, box-shadow 0.2s; box-shadow: 0 4px 16px rgba(255,209,0,0.3); margin-bottom: 12px; }
+    .btn-popup-cta:hover { background: var(--yellow-dark); }
+    .popup-close-link { font-size: 12px; color: var(--muted); cursor: pointer; text-decoration: underline; background: none; border: none; transition: color 0.2s; display: block; margin: 0 auto; }
+    .popup-close-link:hover { color: var(--light); }
+    .popup-close-btn { position: absolute; top: 12px; right: 14px; background: rgba(255,255,255,0.08); border: none; color: var(--muted); width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; cursor: pointer; transition: background 0.2s, color 0.2s; z-index: 1; }
+    .popup-close-btn:hover { background: rgba(255,255,255,0.15); color: var(--light); }
+    .popup-timer-bar { height: 3px; background: var(--dark4); margin-top: 20px; border-radius: 2px; overflow: hidden; }
+    .popup-timer-fill { height: 100%; background: var(--yellow); width: 100%; animation: shrink 8min linear forwards; }
+    @keyframes shrink { to { width: 0%; } }
+
+    /* WhatsApp icon used in CTA */
+    .wa-icon { width: 18px; height: 18px; flex-shrink: 0; }
+
+    @media (max-width: 480px) {
+      .header-nav .nav-label { display: none; }
+      .price-current { font-size: 42px; }
+      .popup-title { font-size: 24px; }
+      .coupon-code { font-size: 26px; }
+    }
+
+    /* ── CHECKOUT OVERLAY ── */
+    .co-overlay {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.82);
+      backdrop-filter: blur(6px);
+      z-index: 9999;
+      display: flex; align-items: center; justify-content: center;
+      padding: 16px;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.3s;
+    }
+    .co-overlay.show { opacity: 1; pointer-events: all; }
+
+    .co-box {
+      background: var(--dark2);
+      border: 2px solid var(--yellow);
+      border-radius: 14px;
+      width: 100%; max-width: 480px;
+      position: relative;
+      overflow: hidden;
+      transform: translateY(28px) scale(0.97);
+      transition: transform 0.35s cubic-bezier(.22,1,.36,1);
+      box-shadow: 0 28px 64px rgba(0,0,0,0.75), 0 0 0 1px rgba(255,209,0,0.1);
+      max-height: 92vh;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border) transparent;
+    }
+    .co-overlay.show .co-box { transform: translateY(0) scale(1); }
+
+    .co-stripe {
+      background: repeating-linear-gradient(-45deg, var(--yellow) 0, var(--yellow) 12px, var(--black) 12px, var(--black) 24px);
+      height: 8px; flex-shrink: 0;
+      position: sticky; top: 0; z-index: 2;
+    }
+
+    .co-close {
+      position: absolute; top: 16px; right: 14px;
+      background: rgba(255,255,255,0.07);
+      border: none; color: var(--muted);
+      width: 30px; height: 30px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; cursor: pointer; z-index: 3;
+      transition: background 0.2s, color 0.2s;
+    }
+    .co-close:hover { background: rgba(255,255,255,0.14); color: var(--light); }
+
+    .co-body { padding: 24px 24px 28px; }
+
+    /* step visibility */
+    .co-step { display: none; }
+    .co-step.active { display: block; }
+
+    /* step: form */
+    .co-header { margin-bottom: 20px; }
+    .co-tag {
+      display: inline-block;
+      background: var(--yellow); color: var(--black);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px; font-weight: 900; letter-spacing: 3px;
+      text-transform: uppercase; padding: 3px 12px; border-radius: 100px;
+      margin-bottom: 10px;
+    }
+    .co-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px; font-weight: 900; text-transform: uppercase;
+      color: var(--light); line-height: 1.15; margin-bottom: 4px;
+    }
+    .co-subtitle { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+    .co-summary {
+      background: var(--dark3);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--yellow);
+      border-radius: 8px; padding: 12px 14px;
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 20px; gap: 8px; flex-wrap: wrap;
+    }
+    .co-summary-name { font-size: 13px; color: var(--light); font-weight: 600; flex: 1; }
+    .co-summary-price {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px; font-weight: 900; color: var(--yellow);
+    }
+    .co-summary-qty { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+    .co-field { margin-bottom: 14px; }
+    .co-label {
+      display: block; font-size: 12px; font-weight: 700;
+      color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+    .co-input {
+      width: 100%; background: var(--dark3);
+      border: 1px solid var(--border); border-radius: 8px;
+      padding: 11px 14px; font-size: 14px; color: var(--light);
+      font-family: 'Inter', sans-serif;
+      outline: none; transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .co-input:focus {
+      border-color: var(--yellow);
+      box-shadow: 0 0 0 3px rgba(255,209,0,0.12);
+    }
+    .co-input::placeholder { color: #555; }
+    .co-input.error { border-color: var(--red); }
+
+    .co-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 400px) { .co-row { grid-template-columns: 1fr; } }
+
+    /* ── CHECKOUT ADDRESS + SHIPPING CHECK ── */
+    .co-address-box {
+      background: var(--dark3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 16px;
+      margin: 18px 0;
+    }
+    .co-address-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px; font-weight: 800; color: var(--light);
+      text-transform: uppercase; letter-spacing: 1px;
+      display: flex; align-items: center; gap: 8px; margin-bottom: 14px;
+    }
+    .co-field-cep .co-cep-row { display: flex; gap: 8px; }
+    .co-field-cep .co-input { flex: 1; }
+    .btn-co-cep {
+      background: var(--yellow); color: var(--black);
+      border: none; border-radius: 6px;
+      padding: 0 14px; font-size: 12px; font-weight: 800;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer; transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .btn-co-cep:hover { background: var(--yellow-dark); }
+    .btn-co-cep:disabled { opacity: 0.5; cursor: wait; }
+    .co-cep-status { font-size: 11px; color: var(--muted); margin-top: 4px; min-height: 16px; }
+    .co-cep-status.ok { color: var(--green); }
+    .co-cep-status.err { color: var(--red); }
+
+    .co-shipping-check {
+      background: var(--dark2);
+      border: 1px dashed var(--border); border-radius: 8px;
+      padding: 12px 14px; margin-top: 16px;
+      display: flex; align-items: center; gap: 10px;
+      position: relative; overflow: hidden;
+      min-height: 44px;
+    }
+    .co-shipping-check.scanning {
+      border-color: rgba(255,209,0,0.35);
+      background: linear-gradient(90deg, var(--dark2) 0%, rgba(255,209,0,0.08) 50%, var(--dark2) 100%);
+      background-size: 200% 100%;
+      animation: scan 1.6s ease-in-out infinite;
+    }
+    @keyframes scan { 0%,100% { background-position: 200% 0; } 50% { background-position: -200% 0; } }
+    .co-shipping-check .co-ship-icon {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: rgba(255,209,0,0.1); border: 1px solid var(--yellow);
+      color: var(--yellow); display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .co-shipping-check .co-ship-icon svg { width: 16px; height: 16px; }
+    .co-shipping-check .co-ship-text { font-size: 13px; font-weight: 600; color: var(--light); }
+    .co-shipping-check .co-ship-line {
+      position: absolute; left: 0; right: 0; height: 1px;
+      background: rgba(255,209,0,0.15);
+      animation: trace 1.2s ease-in-out infinite;
+    }
+    .co-shipping-check .co-ship-line:nth-child(1) { top: 6px; animation-delay: 0s; }
+    .co-shipping-check .co-ship-line:nth-child(2) { top: 50%; animation-delay: 0.4s; }
+    .co-shipping-check .co-ship-line:nth-child(3) { bottom: 6px; animation-delay: 0.8s; }
+    .co-shipping-check:not(.scanning) .co-ship-line { display: none; }
+    @keyframes trace { 0%,100% { opacity: 0; transform: translateX(-100%); } 50% { opacity: 1; transform: translateX(100%); } }
+
+    .co-shipping-result {
+      margin-top: 10px; font-size: 13px; line-height: 1.5;
+      display: none;
+    }
+    .co-shipping-result.show { display: block; }
+    .co-shipping-result .free { color: var(--green); font-weight: 700; }
+    .co-shipping-result .free svg { width: 14px; height: 14px; display: inline; vertical-align: -2px; color: var(--green); }
+    .co-shipping-result .paid { color: var(--red); }
+
+    .co-field-error { font-size: 11px; color: var(--red); margin-top: 4px; display: none; }
+    .co-field.has-error .co-field-error { display: block; }
+    .co-field.has-error .co-input { border-color: var(--red); }
+
+    .btn-co-submit {
+      width: 100%; height: 52px;
+      background: var(--yellow); color: var(--black);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 20px; font-weight: 900; letter-spacing: 1.5px;
+      text-transform: uppercase; border: none; border-radius: 8px;
+      cursor: pointer; margin-top: 20px;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+      box-shadow: 0 4px 18px rgba(255,209,0,0.3);
+    }
+    .btn-co-submit:hover { background: var(--yellow-dark); box-shadow: 0 6px 28px rgba(255,209,0,0.45); }
+    .btn-co-submit:active { transform: scale(0.98); }
+    .btn-co-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+    .btn-co-submit svg { width: 20px; height: 20px; }
+
+    .co-secure {
+      display: flex; align-items: center; justify-content: center;
+      gap: 16px; flex-wrap: wrap;
+      margin-top: 14px;
+      font-size: 11px; color: var(--muted);
+    }
+    .co-secure span { display: flex; align-items: center; gap: 5px; }
+    .co-secure svg { width: 12px; height: 12px; color: var(--yellow); }
+
+    /* step: loading */
+    .co-loading-wrap {
+      text-align: center; padding: 40px 20px;
+    }
+    .co-spinner {
+      width: 52px; height: 52px;
+      border: 4px solid var(--border);
+      border-top-color: var(--yellow);
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .co-loading-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 20px; font-weight: 800; color: var(--light);
+      text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;
+    }
+    .co-loading-sub { font-size: 13px; color: var(--muted); }
+
+    /* step: success (pix) */
+    .co-pix-header { text-align: center; margin-bottom: 20px; }
+    .co-pix-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(37,211,102,0.12); border: 1px solid rgba(37,211,102,0.35);
+      color: var(--green); font-size: 13px; font-weight: 700;
+      padding: 5px 14px; border-radius: 100px; margin-bottom: 12px;
+    }
+    .co-pix-badge svg { width: 14px; height: 14px; }
+    .co-pix-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px; font-weight: 900; color: var(--light);
+      text-transform: uppercase; margin-bottom: 4px;
+    }
+    .co-pix-sub { font-size: 13px; color: var(--muted); }
+
+    .co-qr-wrap {
+      background: #fff;
+      border-radius: 10px; padding: 12px;
+      margin: 18px auto 0;
+      width: fit-content; max-width: 220px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .co-qr-wrap img { width: 196px; height: 196px; display: block; }
+    .co-qr-placeholder {
+      width: 196px; height: 196px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; color: #666; text-align: center; line-height: 1.4;
+    }
+
+    .co-code-label {
+      font-size: 11px; font-weight: 700; color: var(--muted);
+      text-transform: uppercase; letter-spacing: 0.5px;
+      margin: 18px 0 6px;
+    }
+    .co-code-box {
+      background: var(--dark3);
+      border: 1px solid var(--border); border-radius: 8px;
+      padding: 12px 14px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .co-code-text {
+      flex: 1; font-size: 11px; color: var(--muted);
+      word-break: break-all; line-height: 1.5;
+      font-family: monospace;
+      max-height: 52px; overflow: hidden;
+      -webkit-line-clamp: 3;
+      display: -webkit-box; -webkit-box-orient: vertical;
+    }
+    .btn-copy-pix {
+      flex-shrink: 0;
+      background: var(--yellow); color: var(--black);
+      border: none; border-radius: 6px;
+      padding: 8px 14px; font-size: 12px; font-weight: 800;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer; white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .btn-copy-pix:hover { background: var(--yellow-dark); }
+    .btn-copy-pix.copied { background: var(--green); color: #fff; }
+
+    .co-waiting {
+      display: flex; align-items: center; justify-content: center;
+      gap: 8px; margin-top: 18px;
+      font-size: 13px; color: var(--muted);
+    }
+    .co-dot-pulse {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--green);
+      animation: blink 1.2s ease-in-out infinite;
+    }
+    .co-expire-note {
+      text-align: center; margin-top: 10px;
+      font-size: 11px; color: #555;
+    }
+
+    .co-error-wrap { text-align: center; padding: 32px 16px; }
+    .co-error-icon {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: rgba(229,62,62,0.12); border: 2px solid var(--red);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px; color: var(--red);
+    }
+    .co-error-icon svg { width: 24px; height: 24px; }
+    .co-error-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 20px; font-weight: 800; color: var(--light);
+      text-transform: uppercase; margin-bottom: 8px;
+    }
+    .co-error-msg { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 20px; }
+    .btn-co-retry {
+      background: transparent; border: 2px solid var(--yellow);
+      color: var(--yellow); border-radius: 8px;
+      padding: 10px 28px; font-size: 14px; font-weight: 700;
+      cursor: pointer; transition: background 0.2s, color 0.2s;
+    }
+    .btn-co-retry:hover { background: var(--yellow); color: var(--black); }
+  </style>
+</head>
+<body>
+
+  <!-- ─── SVG SPRITE (hidden) ─── -->
+  <svg style="position:absolute;width:0;height:0;overflow:hidden;" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 11.39 18 19.45 19.45 0 0 1 5 11.67 19.79 19.79 0 0 1 2.12 4.22 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="icon-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="icon-truck" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 8h4l3 3v5h-7V8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="5.5" cy="18.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="18.5" cy="18.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+      <symbol id="icon-box" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 22V12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.27 6.96 12 12.01l8.73-5.05" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 6v6l4 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="icon-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 11V7a5 5 0 0 1 10 0v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="icon-fire" viewBox="0 0 24 24"><path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="icon-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 8v13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 12v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 8h7a2 2 0 0 0 0-4 5 5 0 0 0-5 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 8H5a2 2 0 0 1 0-4 5 5 0 0 1 5 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="icon-cart" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="3" y1="6" x2="21" y2="6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 10a4 4 0 0 1-8 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="currentColor"/></symbol>
+      <symbol id="icon-chevron-left" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="icon-chevron-right" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ─── POPUP DIA DOS PAIS ─── -->
+  <div class="popup-overlay" id="coupon-popup" role="dialog" aria-modal="true" aria-labelledby="popup-heading">
+    <div class="popup-box">
+      <div class="popup-top-stripe"></div>
+      <button class="popup-close-btn" onclick="closePopup()" aria-label="Fechar">✕</button>
+      <div class="popup-body">
+        <div class="popup-icon">
+          <svg viewBox="0 0 64 64" fill="currentColor"><path d="M32 12C21.5 12 16 20.5 16 28h32c0-7.5-5.5-16-16-16z" fill="#111"/><path d="M16 28h32v6H16z" fill="#111"/><path d="M22 22h20c1 0 2 1 2 2v4H20v-4c0-1 1-2 2-2z" fill="var(--yellow)"/><g stroke="#111" stroke-width="4" stroke-linecap="round" fill="none"><path d="M24 38l16 14"/><path d="M40 38L24 52"/></g><circle cx="24" cy="38" r="3" fill="#111"/><circle cx="40" cy="38" r="3" fill="#111"/><rect x="38" y="48" width="10" height="6" rx="1" fill="#111" transform="rotate(-45 43 51)"/></svg>
+        </div>
+        <div class="popup-tag">Oferta Especial</div>
+        <h2 class="popup-title" id="popup-heading">Dia dos Pais<br><span>40% OFF!</span></h2>
+        <p class="popup-subtitle">
+          Dê ao seu pai o presente perfeito: 226 ferramentas profissionais.<br>
+          Só hoje — use o cupom abaixo e economize de verdade.
+        </p>
+        <div class="popup-discount-badge">
+          <svg class="svg-icon"><use href="#icon-fire"/></svg>
+          Desconto de 40% no kit completo
+        </div>
+        <div class="coupon-box" onclick="copyCoupon()" title="Clique para copiar">
+          <div class="coupon-label">Seu cupom exclusivo</div>
+          <div class="coupon-code" id="coupon-code">PAIZAO40</div>
+          <div class="coupon-copy-hint" id="copy-hint">Clique para copiar o código</div>
+        </div>
+        <div class="popup-live">
+          <span class="dot-live"></span>
+          <span id="popup-viewers">247 pessoas</span> estão vendo essa oferta agora
+        </div>
+        <button class="btn-popup-cta" onclick="closePopup()">
+          <svg class="svg-icon" style="width:20px;height:20px"><use href="#icon-gift"/></svg>
+          Quero meu desconto
+        </button>
+        <button class="popup-close-link" onclick="closePopup()">Agora não, obrigado</button>
+        <div class="popup-timer-bar"><div class="popup-timer-fill" id="popup-fill"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announce-bar">
+    <span>Frete Grátis em todo o Brasil — Estoque Limitado!</span>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="ComplexBuilds">
+        <img src="assets/logo.svg" alt="ComplexBuilds">
+        <div class="logo-text">Complex<span>Builds</span></div>
+      </a>
+      <div class="header-spacer"></div>
+      <nav class="header-nav">
+        <a href="#avaliacoes">
+          <svg class="svg-icon nav-icon" style="color:var(--yellow)"><use href="#icon-star"/></svg>
+          <span class="nav-label">Avaliações</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- URGENCY BAR -->
+  <div class="urgency-bar">
+    <svg class="svg-icon urgency-icon"><use href="#icon-fire"/></svg>
+    QUEIMA DE ESTOQUE — 68% OFF
+    <div class="timer-badge">
+      <svg class="svg-icon" style="width:14px;height:14px"><use href="#icon-clock"/></svg>
+      <span id="timer">20:00</span>
+    </div>
+  </div>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="trust-inner">
+      <div class="trust-cards">
+        <div class="trust-card">
+          <svg class="svg-icon trust-icon"><use href="#icon-star"/></svg>
+          <div>
+            <div class="trust-label">4.9 — 1.832 avaliações</div>
+            <div class="trust-sub">Clientes satisfeitos</div>
+          </div>
+        </div>
+        <div class="trust-card">
+          <svg class="svg-icon trust-icon"><use href="#icon-truck"/></svg>
+          <div>
+            <div class="trust-label">Frete Grátis</div>
+            <div class="trust-sub">Entrega em 3–10 dias úteis</div>
+          </div>
+        </div>
+        <div class="trust-card">
+          <svg class="svg-icon trust-icon"><use href="#icon-box"/></svg>
+          <div>
+            <div class="trust-label">226 Peças</div>
+            <div class="trust-sub">Tudo em uma maleta só</div>
+          </div>
+        </div>
+        <div class="trust-card">
+          <svg class="svg-icon trust-icon"><use href="#icon-shield"/></svg>
+          <div>
+            <div class="trust-label">Garantia 90 dias</div>
+            <div class="trust-sub">Loja oficial ComplexBuilds</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT SECTION -->
+  <section class="product-section">
+    <!-- Gallery -->
+    <div class="gallery-wrap">
+      <div class="gallery-main">
+        <img id="main-img" src="assets/prod-1.jpg" alt="Kit de Ferramentas ComplexBuilds 226 Peças">
+        <button class="gallery-nav prev" aria-label="Foto anterior" onclick="prevImg()">
+          <svg class="svg-icon"><use href="#icon-chevron-left"/></svg>
+        </button>
+        <button class="gallery-nav next" aria-label="Próxima foto" onclick="nextImg()">
+          <svg class="svg-icon"><use href="#icon-chevron-right"/></svg>
+        </button>
+      </div>
+      <div class="gallery-thumbs" id="gallery-thumbs">
+        <button class="thumb active" data-index="0" onclick="changeImg(0)"><img src="assets/prod-1.jpg" alt=""></button>
+        <button class="thumb" data-index="1" onclick="changeImg(1)"><img src="assets/prod-2.jpg" alt=""></button>
+        <button class="thumb" data-index="2" onclick="changeImg(2)"><img src="assets/prod-3.jpg" alt=""></button>
+        <button class="thumb" data-index="3" onclick="changeImg(3)"><img src="assets/prod-4.jpg" alt=""></button>
+        <button class="thumb" data-index="4" onclick="changeImg(4)"><img src="assets/prod-5.jpg" alt=""></button>
+      </div>
+    </div>
+
+    <!-- Buy Box -->
+    <div class="buy-box">
+      <h1>Kit de Ferramentas Jogo Completo com Parafusadeira — 226 Peças</h1>
+
+      <div class="badge-row">
+        <span class="badge badge-yellow">
+          <svg class="svg-icon"><use href="#icon-star"/></svg>
+          Promoção
+        </span>
+        <span class="badge badge-red">
+          <svg class="svg-icon" style="width:12px;height:12px"><use href="#icon-fire"/></svg>
+          Queima — 68% OFF
+        </span>
+        <span class="badge badge-black">ComplexBuilds</span>
+      </div>
+
+      <div class="specs-grid">
+        <div class="spec-chip"><div class="spec-chip-label">Voltagem</div><div class="spec-chip-val">12V</div></div>
+        <div class="spec-chip"><div class="spec-chip-label">Torque</div><div class="spec-chip-val">24 Nm</div></div>
+        <div class="spec-chip"><div class="spec-chip-label">Bateria</div><div class="spec-chip-val">Íon-lítio</div></div>
+        <div class="spec-chip"><div class="spec-chip-label">Amperagem</div><div class="spec-chip-val">1,5 A</div></div>
+        <div class="spec-chip"><div class="spec-chip-label">Peso</div><div class="spec-chip-val">4,32 kg</div></div>
+        <div class="spec-chip"><div class="spec-chip-label">Peças</div><div class="spec-chip-val">226</div></div>
+      </div>
+
+      <div class="price-block">
+        <div class="price-from">De <s>R$ 299,90</s> por:</div>
+        <div class="price-main">
+          <div class="price-current">R$ 127,90</div>
+          <div class="price-discount">−68%</div>
+        </div>
+        <div class="price-note">✦ Preço válido somente no Pix</div>
+        <div class="price-installments">ou <strong>10× de R$ 12,79</strong> no cartão sem juros</div>
+      </div>
+
+      <div class="purchase-row">
+        <div class="qty-control">
+          <button class="qty-btn" onclick="changeQty(-1)" aria-label="Diminuir">−</button>
+          <div class="qty-num" id="qty">1</div>
+          <button class="qty-btn" onclick="changeQty(1)" aria-label="Aumentar">+</button>
+        </div>
+        <!-- ===== GATEWAY DE PAGAMENTO ===== -->
+        <div id="gateway-wrapper">
+          <button class="btn-comprar" onclick="openCheckout()">
+            <svg class="svg-icon"><use href="#icon-cart"/></svg>
+            COMPRAR AGORA
+          </button>
+        </div>
+        <!-- ===== FIM GATEWAY ===== -->
+      </div>
+
+
+      <div class="shipping-box">
+        <div class="shipping-box-title">Calcular frete e prazo de entrega</div>
+        <div class="cep-row">
+          <input class="cep-input" id="cep-input" type="text" placeholder="Digite seu CEP" maxlength="9">
+          <button class="btn-cep" onclick="calcShipping()">CALCULAR</button>
+        </div>
+        <div id="cep-result"></div>
+      </div>
+
+      <div class="security-row">
+        <div class="sec-item">
+          <svg class="svg-icon"><use href="#icon-lock"/></svg>
+          Compra segura
+        </div>
+        <div class="sec-item">
+          <svg class="svg-icon"><use href="#icon-shield"/></svg>
+          SSL criptografado
+        </div>
+        <div class="sec-item">
+          <svg class="svg-icon"><use href="#icon-box"/></svg>
+          Produto original
+        </div>
+        <div class="sec-item">
+          <svg class="svg-icon"><use href="#icon-shield"/></svg>
+          Garantia 90 dias
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABS -->
+  <div class="tabs-section">
+    <div class="tabs-inner">
+      <div class="tab-nav" role="tablist">
+        <button class="tab-btn active" role="tab" onclick="showTab(this,'tab-desc')">Descrição</button>
+        <button class="tab-btn" role="tab" onclick="showTab(this,'tab-includes')">O que vem no kit</button>
+        <button class="tab-btn" role="tab" onclick="showTab(this,'tab-specs')">Especificações</button>
+        <button class="tab-btn" role="tab" onclick="showTab(this,'tab-warranty')">Garantia</button>
+      </div>
+
+      <div id="tab-desc" class="tab-content active">
+        <div class="desc-intro">Kit Profissional</div>
+        <div class="desc-title">226 ferramentas que resolvem qualquer tarefa</div>
+        <p class="desc-lead">Chega de parar no meio do serviço por falta de ferramenta. O Kit ComplexBuilds reúne tudo o que você precisa para reparos domésticos, montagem de móveis, manutenção elétrica e pequenas obras — em uma maleta robusta e organizada.</p>
+        <div class="features-grid">
+          <div class="feature-card"><div class="feature-card-title">Parafusadeira 12V Prática</div><div class="feature-card-desc">Bateria removível íon-lítio, fonte carregadora inclusa, controle de torque, inversor de rotação e luz LED para trabalhos em locais com pouca iluminação.</div></div>
+          <div class="feature-card"><div class="feature-card-title">Organização Total</div><div class="feature-card-desc">Acompanha maleta resistente com compartimentos internos específicos para cada ferramenta, mantendo tudo protegido e sempre à mão.</div></div>
+          <div class="feature-card"><div class="feature-card-title">Acessórios Essenciais</div><div class="feature-card-desc">Alicate, martelo, estilete, chaves Allen, chaves de precisão, chave-teste, fita isolante, serra e caixa com peças variadas.</div></div>
+          <div class="feature-card"><div class="feature-card-title">Para Casa e Trabalho</div><div class="feature-card-desc">Ideal para manutenção doméstica, montagem de móveis, pequenos consertos, oficinas, eletricistas, hobbistas e profissionais.</div></div>
+          <div class="feature-card"><div class="feature-card-title">Jogo Completo de Chaves</div><div class="feature-card-desc">Inclui jogo de chaves, brocas de diversos diâmetros, bits magnéticos, trena, nível e chave inglesa para cobrir múltiplas necessidades.</div></div>
+          <div class="feature-card"><div class="feature-card-title">Bateria Inclusa</div><div class="feature-card-desc">Desembalou, carregou, usou. A bateria 12V íon-lítio e o carregador já estão no kit. Sem custo extra, sem surpresas.</div></div>
+        </div>
+      </div>
+
+      <div id="tab-includes" class="tab-content">
+        <div class="desc-title" style="margin-bottom:20px">Tudo que vem no kit</div>
+        <ul class="includes-list">
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Parafusadeira 12V com bateria íon-lítio</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Fonte/carregador de bateria</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Maleta principal resistente com compartimentos</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Maleta secundária para acessórios</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Brocas para madeira, metal e alvenaria</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Bits magnéticos (torx, philips, fenda, hex)</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Jogo de chaves combinadas</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Jogo de chaves Allen (mm e pol)</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Jogo de chaves de precisão</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Alicate de bico e alicate de corte</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Martelo 300g cabo de borracha</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Trena 5 metros</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Nível de bolha</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Chave inglesa ajustável</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Estilete retrátil</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Chave-teste de tensão</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Fita isolante</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Serra manual</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Caixa com peças diversas (parafusos, buchas…)</li>
+          <li><span class="check-icon"><svg class="svg-icon"><use href="#icon-check"/></svg></span>Manual de uso em português</li>
+        </ul>
+      </div>
+
+      <div id="tab-specs" class="tab-content">
+        <div class="desc-title" style="margin-bottom:20px">Especificações técnicas</div>
+        <div style="max-width:500px">
+          <div class="spec-row"><span class="spec-row-label">Marca</span><span class="spec-row-val">ComplexBuilds</span></div>
+          <div class="spec-row"><span class="spec-row-label">Nº de peças</span><span class="spec-row-val">226</span></div>
+          <div class="spec-row"><span class="spec-row-label">Voltagem da parafusadeira</span><span class="spec-row-val">12V</span></div>
+          <div class="spec-row"><span class="spec-row-label">Torque máximo</span><span class="spec-row-val">24 Newton Metros</span></div>
+          <div class="spec-row"><span class="spec-row-label">Amperagem</span><span class="spec-row-val">1,5 A</span></div>
+          <div class="spec-row"><span class="spec-row-label">Tipo de bateria</span><span class="spec-row-val">Íon-lítio (inclusa)</span></div>
+          <div class="spec-row"><span class="spec-row-label">Nº de baterias</span><span class="spec-row-val">1 × 12V (inclusa)</span></div>
+          <div class="spec-row"><span class="spec-row-label">Peso do produto</span><span class="spec-row-val">4,32 kg</span></div>
+        </div>
+      </div>
+
+      <div id="tab-warranty" class="tab-content">
+        <div class="desc-title" style="margin-bottom:20px">Garantia e devolução</div>
+        <div class="guarantee-box">
+          <div class="guarantee-icon"><svg class="svg-icon"><use href="#icon-shield"/></svg></div>
+          <div>
+            <div class="guarantee-title">90 Dias de Garantia Total</div>
+            <div class="guarantee-text">
+              Todos os produtos ComplexBuilds possuem <strong style="color:var(--light)">90 dias de garantia</strong> contra defeitos de fabricação. Se algo não estiver correto, resolvemos por substituição ou reembolso integral.<br><br>
+              <strong style="color:var(--light)">Arrependimento:</strong> 7 dias corridos após o recebimento para devolução, conforme o CDC (Art. 49). Frete de retorno por conta da ComplexBuilds.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REVIEWS -->
+  <section id="avaliacoes" class="reviews-section" style="scroll-margin-top:70px">
+    <div class="section-header">
+      <div class="section-title">Avaliações de Clientes</div>
+      <div class="rating-summary">
+        <div class="stars-row">★★★★★</div>
+        <div class="rating-num">4.9</div>
+      </div>
+      <div class="rating-count">Baseado em 1.832 avaliações verificadas</div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-header">
+          <img class="review-avatar" src="assets/reviews/rev-1.jpg" alt="Carlos Mendes">
+          <div><div class="review-name">Carlos Mendes</div><div class="review-date">Há 3 dias</div></div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">Comprei com receio por ser online, mas chegou tudo perfeito e antes do prazo. A parafusadeira tem boa potência e a maleta é bem resistente. Recomendo!</div>
+        <div class="review-verified"><svg class="svg-icon"><use href="#icon-shield"/></svg> Compra verificada</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <img class="review-avatar" src="assets/reviews/rev-2.jpg" alt="Maria Aparecida Silva">
+          <div><div class="review-name">Maria Aparecida Silva</div><div class="review-date">Há 1 semana</div></div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">Simplesmente incrível! O kit chegou super bem embalado e a qualidade é impressionante. Meu marido usou no mesmo dia para montar um armário. Tudo encaixou perfeitamente.</div>
+        <div class="review-verified"><svg class="svg-icon"><use href="#icon-shield"/></svg> Compra verificada</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <img class="review-avatar" src="assets/reviews/rev-3.jpg" alt="Juliana Castro">
+          <div><div class="review-name">Juliana Castro</div><div class="review-date">Há 2 semanas</div></div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">Uso todo dia no meu trabalho de manutenção e a qualidade é excelente para o preço. A parafusadeira tem bastante torque e a bateria dura bem. Kit completo mesmo!</div>
+        <div class="review-verified"><svg class="svg-icon"><use href="#icon-shield"/></svg> Compra verificada</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <img class="review-avatar" src="assets/reviews/rev-4.jpg" alt="Beatriz Lima">
+          <div><div class="review-name">Beatriz Lima</div><div class="review-date">Há 3 semanas</div></div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">Excelente! As ferramentas são robustas e bem acabadas. Comprei para deixar em casa para pequenos reparos e valeu cada centavo. O frete grátis foi um ótimo bônus.</div>
+        <div class="review-verified"><svg class="svg-icon"><use href="#icon-shield"/></svg> Compra verificada</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <img class="review-avatar" src="assets/reviews/rev-5.jpg" alt="Rafael Souza">
+          <div><div class="review-name">Rafael Souza</div><div class="review-date">Há 1 mês</div></div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">Sou eletricista autônomo e comprei para ter um kit completo de reserva. A organização da maleta é perfeita, cada ferramenta tem seu lugar. Vale muito o investimento!</div>
+        <div class="review-verified"><svg class="svg-icon"><use href="#icon-shield"/></svg> Compra verificada</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <img class="review-avatar" src="assets/reviews/rev-6.jpg" alt="Vanessa Ribeiro">
+          <div><div class="review-name">Vanessa Ribeiro</div><div class="review-date">Há 1 mês</div></div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">Comprei de presente para meu pai e ele ficou encantado. Material de qualidade profissional a um preço acessível. Embalagem caprichada, chegou tudo sem um arranhão.</div>
+        <div class="review-verified"><svg class="svg-icon"><use href="#icon-shield"/></svg> Compra verificada</div>
+      </div>
+    </div>
+
+    <div class="load-more-wrap">
+      <button class="btn-load-more">Carregar mais avaliações (42 restantes)</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">
+          <img src="assets/logo.svg" alt="ComplexBuilds">
+          <div class="footer-logo-text">Complex<span>Builds</span></div>
+        </div>
+        <p class="footer-desc">Ferramentas completas para quem faz acontecer. Da manutenção doméstica ao trabalho profissional.</p>
+      </div>
+      <div>
+        <div class="footer-section-title">Atendimento</div>
+        <ul class="footer-links">
+          <li><svg class="svg-icon"><use href="#icon-phone"/></svg>(11) 9762-7379</li>
+          <li><svg class="svg-icon"><use href="#icon-mail"/></svg>contato@irmaoscomplex.com</li>
+          <li><svg class="svg-icon"><use href="#icon-clock"/></svg>Seg–Sex, 8h às 18h</li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-section-title">Empresa</div>
+        <p class="footer-desc">
+          <strong>Irmãos Complex B.</strong><br>
+          CNPJ: 26.017.950/0001-12
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 <span>ComplexBuilds</span>. Todos os direitos reservados.</div>
+  </footer>
+
+  <!-- ─── CHECKOUT MODAL ─── -->
+  <div class="co-overlay" id="co-overlay" role="dialog" aria-modal="true" aria-labelledby="co-title">
+    <div class="co-box" id="co-box">
+      <div class="co-stripe"></div>
+      <button class="co-close" onclick="closeCheckout()" aria-label="Fechar">✕</button>
+      <div class="co-body">
+
+        <!-- STEP 1: FORM -->
+        <div class="co-step active" id="co-step-form">
+          <div class="co-header">
+            <div class="co-tag">Pix — Pagamento Seguro</div>
+            <div class="co-title" id="co-title">Finalize seu pedido</div>
+            <div class="co-subtitle">Preencha seus dados para gerar o código Pix</div>
+          </div>
+
+          <div class="co-summary">
+            <div>
+              <div class="co-summary-name">Kit 226 Peças + Parafusadeira 12V</div>
+              <div class="co-summary-qty" id="co-qty-label">Quantidade: 1</div>
+            </div>
+            <div class="co-summary-price" id="co-total-price">R$ 127,90</div>
+          </div>
+
+          <div class="co-row">
+            <div class="co-field" id="field-name">
+              <label class="co-label" for="co-name">Nome completo</label>
+              <input class="co-input" id="co-name" type="text" placeholder="Seu nome" autocomplete="name">
+              <div class="co-field-error">Informe seu nome completo.</div>
+            </div>
+            <div class="co-field" id="field-document">
+              <label class="co-label" for="co-document">CPF / CNPJ</label>
+              <input class="co-input" id="co-document" type="text" placeholder="000.000.000-00" inputmode="numeric" autocomplete="off">
+              <div class="co-field-error">CPF ou CNPJ inválido.</div>
+            </div>
+          </div>
+
+          <div class="co-row">
+            <div class="co-field" id="field-email">
+              <label class="co-label" for="co-email">E-mail</label>
+              <input class="co-input" id="co-email" type="email" placeholder="seu@email.com" autocomplete="email">
+              <div class="co-field-error">E-mail inválido.</div>
+            </div>
+            <div class="co-field" id="field-phone">
+              <label class="co-label" for="co-phone">WhatsApp / Telefone</label>
+              <input class="co-input" id="co-phone" type="tel" placeholder="(11) 90000-0000" inputmode="tel" autocomplete="tel">
+              <div class="co-field-error">Telefone inválido.</div>
+            </div>
+          </div>
+
+          <div class="co-address-box">
+            <div class="co-address-title">
+              <svg class="svg-icon" style="width:14px;height:14px;color:var(--yellow)"><use href="#icon-truck"/></svg>
+              Endereço de entrega
+            </div>
+
+            <div class="co-row">
+              <div class="co-field co-field-cep" id="field-cep">
+                <label class="co-label" for="co-cep">CEP</label>
+                <div class="co-cep-row">
+                  <input class="co-input" id="co-cep" type="text" placeholder="00000-000" inputmode="numeric" autocomplete="postal-code">
+                  <button class="btn-co-cep" id="btn-co-cep" type="button" onclick="lookupCep()">Buscar</button>
+                </div>
+                <div class="co-field-error">CEP inválido.</div>
+                <div class="co-cep-status" id="co-cep-status"></div>
+              </div>
+              <div class="co-field" id="field-state">
+                <label class="co-label" for="co-state">Estado</label>
+                <input class="co-input" id="co-state" type="text" placeholder="UF" maxlength="2" autocomplete="address-level1">
+                <div class="co-field-error">Informe o estado.</div>
+              </div>
+            </div>
+
+            <div class="co-row">
+              <div class="co-field" id="field-city">
+                <label class="co-label" for="co-city">Cidade</label>
+                <input class="co-input" id="co-city" type="text" placeholder="Cidade" autocomplete="address-level2">
+                <div class="co-field-error">Informe a cidade.</div>
+              </div>
+              <div class="co-field" id="field-neighborhood">
+                <label class="co-label" for="co-neighborhood">Bairro</label>
+                <input class="co-input" id="co-neighborhood" type="text" placeholder="Bairro" autocomplete="address-level3">
+                <div class="co-field-error">Informe o bairro.</div>
+              </div>
+            </div>
+
+            <div class="co-row">
+              <div class="co-field" id="field-street">
+                <label class="co-label" for="co-street">Rua / Avenida</label>
+                <input class="co-input" id="co-street" type="text" placeholder="Logradouro" autocomplete="street-address">
+                <div class="co-field-error">Informe a rua.</div>
+              </div>
+              <div class="co-field" id="field-number">
+                <label class="co-label" for="co-number">Número</label>
+                <input class="co-input" id="co-number" type="text" placeholder="Nº" autocomplete="off">
+                <div class="co-field-error">Informe o número.</div>
+              </div>
+            </div>
+
+            <div class="co-field" id="field-complement">
+              <label class="co-label" for="co-complement">Complemento (opcional)</label>
+              <input class="co-input" id="co-complement" type="text" placeholder="Apto, bloco, casa, referência…" autocomplete="off">
+            </div>
+
+            <div class="co-shipping-check" id="co-shipping-check">
+              <div class="co-ship-line"></div>
+              <div class="co-ship-line"></div>
+              <div class="co-ship-line"></div>
+              <div class="co-ship-icon"><svg class="svg-icon"><use href="#icon-truck"/></svg></div>
+              <div class="co-ship-text" id="co-ship-text">Verificando frete grátis…</div>
+            </div>
+            <div class="co-shipping-result" id="co-shipping-result"></div>
+          </div>
+
+          <button class="btn-co-submit" id="btn-co-submit" onclick="submitCheckout()">
+            <svg class="svg-icon"><use href="#icon-lock"/></svg>
+            GERAR PIX — PAGAR AGORA
+          </button>
+
+          <div class="co-secure">
+            <span><svg class="svg-icon"><use href="#icon-lock"/></svg> Criptografia SSL</span>
+            <span><svg class="svg-icon"><use href="#icon-shield"/></svg> Compra segura</span>
+            <span><svg class="svg-icon"><use href="#icon-truck"/></svg> Frete grátis</span>
+          </div>
+        </div>
+
+        <!-- STEP 2: LOADING -->
+        <div class="co-step" id="co-step-loading">
+          <div class="co-loading-wrap">
+            <div class="co-spinner"></div>
+            <div class="co-loading-title">Gerando seu Pix…</div>
+            <div class="co-loading-sub">Aguarde, estamos processando seu pedido.</div>
+          </div>
+        </div>
+
+        <!-- STEP 3: SUCCESS (PIX CODE) -->
+        <div class="co-step" id="co-step-pix">
+          <div class="co-pix-header">
+            <div class="co-pix-badge">
+              <svg class="svg-icon"><use href="#icon-check"/></svg>
+              Pix gerado com sucesso
+            </div>
+            <div class="co-pix-title">Escaneie ou copie o código</div>
+            <div class="co-pix-sub">O Pix expira em <strong style="color:var(--light)">30 minutos</strong>. Pague agora para garantir seu pedido.</div>
+          </div>
+
+          <div class="co-qr-wrap" id="co-qr-wrap">
+            <div class="co-qr-placeholder" id="co-qr-placeholder">
+              QR Code<br>não disponível.<br>Use o código abaixo.
+            </div>
+            <img id="co-qr-img" src="" alt="QR Code Pix" style="display:none">
+          </div>
+
+          <div class="co-code-label">Pix Copia e Cola</div>
+          <div class="co-code-box">
+            <div class="co-code-text" id="co-pix-code">—</div>
+            <button class="btn-copy-pix" id="btn-copy-pix" onclick="copyPixCode()">COPIAR</button>
+          </div>
+
+          <div class="co-waiting">
+            <div class="co-dot-pulse"></div>
+            Aguardando confirmação do pagamento…
+          </div>
+          <div class="co-expire-note" id="co-expire-note"></div>
+        </div>
+
+        <!-- STEP 4: ERROR -->
+        <div class="co-step" id="co-step-error">
+          <div class="co-error-wrap">
+            <div class="co-error-icon">
+              <svg class="svg-icon"><use href="#icon-shield"/></svg>
+            </div>
+            <div class="co-error-title">Ops! Algo deu errado</div>
+            <div class="co-error-msg" id="co-error-msg">Não foi possível gerar o Pix. Tente novamente em alguns instantes.</div>
+            <button class="btn-co-retry" onclick="retryCheckout()">Tentar novamente</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Sticky mobile buy bar -->
+  <div class="sticky-buy">
+    <div class="sticky-price">
+      <small>apenas no Pix</small>
+      R$ 127,90
+    </div>
+    <button class="sticky-btn" onclick="openCheckout()">COMPRAR</button>
+  </div>
+
+  <script>
+    const galleryImages = ['assets/prod-1.jpg','assets/prod-2.jpg','assets/prod-3.jpg','assets/prod-4.jpg','assets/prod-5.jpg'];
+    let currentImg = 0;
+    let galleryAutoplay;
+
+    function changeImg(index, smooth = true) {
+      currentImg = ((index % galleryImages.length) + galleryImages.length) % galleryImages.length;
+      const main = document.getElementById('main-img');
+      if (smooth) {
+        main.style.opacity = '0';
+        setTimeout(() => { main.src = galleryImages[currentImg]; main.style.opacity = '1'; }, 160);
+      } else {
+        main.src = galleryImages[currentImg];
+      }
+      document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+      const thumb = document.querySelector('.thumb[data-index="' + currentImg + '"]');
+      if (thumb) {
+        thumb.classList.add('active');
+        // Scroll only the thumbs strip horizontally — never touch the page scroll position
+        const strip = thumb.closest('.gallery-thumbs');
+        if (strip) {
+          const stripRect = strip.getBoundingClientRect();
+          const thumbRect = thumb.getBoundingClientRect();
+          const offset = thumbRect.left - stripRect.left - (stripRect.width / 2) + (thumbRect.width / 2);
+          strip.scrollBy({ left: offset, behavior: 'smooth' });
+        }
+      }
+    }
+    function nextImg() { changeImg(currentImg + 1); resetAutoplay(); }
+    function prevImg() { changeImg(currentImg - 1); resetAutoplay(); }
+    function startAutoplay() {
+      stopAutoplay();
+      galleryAutoplay = setInterval(() => changeImg(currentImg + 1), 4000);
+    }
+    function stopAutoplay() { if (galleryAutoplay) clearInterval(galleryAutoplay); }
+    function resetAutoplay() { startAutoplay(); }
+
+    document.querySelector('.gallery-main').addEventListener('mouseenter', stopAutoplay);
+    document.querySelector('.gallery-main').addEventListener('mouseleave', startAutoplay);
+    document.querySelector('.gallery-thumbs').addEventListener('mouseenter', stopAutoplay);
+    document.querySelector('.gallery-thumbs').addEventListener('mouseleave', startAutoplay);
+    document.addEventListener('visibilitychange', () => { document.hidden ? stopAutoplay() : startAutoplay(); });
+    startAutoplay();
+
+    let qty = 1;
+    function changeQty(delta) {
+      qty = Math.max(1, Math.min(10, qty + delta));
+      document.getElementById('qty').textContent = qty;
+    }
+    function showTab(btn, id) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(id).classList.add('active');
+    }
+    (function () {
+      const KEY = 'cb_timer_end_v3';
+      let end = parseInt(sessionStorage.getItem(KEY) || '0', 10);
+      if (!end || end < Date.now()) { end = Date.now() + 20 * 60 * 1000; sessionStorage.setItem(KEY, end); }
+      const el = document.getElementById('timer');
+      function tick() {
+        const diff = Math.max(0, end - Date.now());
+        el.textContent = String(Math.floor(diff / 60000)).padStart(2, '0') + ':' + String(Math.floor((diff % 60000) / 1000)).padStart(2, '0');
+        if (diff > 0) setTimeout(tick, 1000);
+      }
+      tick();
+    })();
+    document.getElementById('cep-input').addEventListener('input', function () {
+      let v = this.value.replace(/\D/g, '').slice(0, 8);
+      if (v.length > 5) v = v.slice(0, 5) + '-' + v.slice(5);
+      this.value = v;
+    });
+    function calcShipping() {
+      const cep = document.getElementById('cep-input').value.replace(/\D/g, '');
+      const el = document.getElementById('cep-result');
+      if (cep.length < 8) { el.textContent = 'Digite um CEP válido.'; el.style.color = '#e53e3e'; return; }
+      el.style.color = 'var(--muted)'; el.textContent = 'Calculando…';
+      setTimeout(() => {
+        const d = Math.floor(Math.random() * 5) + 3;
+        el.innerHTML = '<strong style="color:#4ade80">✓ Frete GRÁTIS</strong> — Entrega prevista em ' + d + ' a ' + (d + 2) + ' dias úteis.';
+      }, 900);
+    }
+    (function () {
+      const KEY = 'cb_popup_shown';
+      if (sessionStorage.getItem(KEY)) return;
+      setTimeout(function () {
+        const overlay = document.getElementById('coupon-popup');
+        overlay.classList.add('show');
+        sessionStorage.setItem(KEY, '1');
+        const viewers = [217, 234, 247, 259, 263, 271, 288];
+        document.getElementById('popup-viewers').textContent = viewers[Math.floor(Math.random() * viewers.length)] + ' pessoas';
+      }, 5000);
+    })();
+    function closePopup() {
+      const overlay = document.getElementById('coupon-popup');
+      overlay.style.opacity = '0';
+      overlay.style.pointerEvents = 'none';
+      setTimeout(() => overlay.style.display = 'none', 350);
+    }
+    document.getElementById('coupon-popup').addEventListener('click', function (e) { if (e.target === this) closePopup(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closePopup(); });
+    function copyCoupon() {
+      const code = document.getElementById('coupon-code').textContent;
+      const hint = document.getElementById('copy-hint');
+      navigator.clipboard.writeText(code).then(() => {
+        hint.textContent = '✓ Código copiado!'; hint.classList.add('copied');
+        setTimeout(() => { hint.textContent = 'Clique para copiar o código'; hint.classList.remove('copied'); }, 2500);
+      }).catch(() => {
+        const sel = window.getSelection(); const range = document.createRange();
+        range.selectNodeContents(document.getElementById('coupon-code'));
+        sel.removeAllRanges(); sel.addRange(range);
+        hint.textContent = '✓ Selecione e copie com Ctrl+C'; hint.classList.add('copied');
+      });
+    }
+
+    /* ═══════════════════════════════════════════
+       CHECKOUT — SigiloPay Pix Integration
+    ═══════════════════════════════════════════ */
+
+    const UNIT_PRICE = 127.90;
+
+    // ── helpers ──────────────────────────────
+    function formatBRL(value) {
+      return value.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    function coStep(id) {
+      document.querySelectorAll('.co-step').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      // scroll modal to top
+      const box = document.getElementById('co-box');
+      if (box) box.scrollTop = 0;
+    }
+
+    // ── open / close ──────────────────────────
+    function openCheckout() {
+      const total = UNIT_PRICE * qty;
+      document.getElementById('co-qty-label').textContent = 'Quantidade: ' + qty;
+      document.getElementById('co-total-price').textContent = 'R$ ' + formatBRL(total);
+      coStep('co-step-form');
+      const overlay = document.getElementById('co-overlay');
+      overlay.classList.add('show');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => document.getElementById('co-name').focus(), 350);
+    }
+
+    function closeCheckout() {
+      const overlay = document.getElementById('co-overlay');
+      overlay.style.opacity = '0';
+      overlay.style.pointerEvents = 'none';
+      setTimeout(() => {
+        overlay.classList.remove('show');
+        overlay.style.opacity = '';
+        overlay.style.pointerEvents = '';
+      }, 300);
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('co-overlay').addEventListener('click', function (e) {
+      if (e.target === this) closeCheckout();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && document.getElementById('co-overlay').classList.contains('show')) closeCheckout();
+    });
+
+    // ── input masks ───────────────────────────
+    document.getElementById('co-phone').addEventListener('input', function () {
+      let v = this.value.replace(/\D/g, '').slice(0, 11);
+      if (v.length > 10) v = v.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
+      else if (v.length > 6) v = v.replace(/^(\d{2})(\d{4})(\d*)$/, '($1) $2-$3');
+      else if (v.length > 2) v = v.replace(/^(\d{2})(\d*)$/, '($1) $2');
+      this.value = v;
+    });
+
+    document.getElementById('co-document').addEventListener('input', function () {
+      let v = this.value.replace(/\D/g, '');
+      if (v.length <= 11) {
+        // CPF: 000.000.000-00
+        v = v.slice(0, 11);
+        if (v.length > 9) v = v.replace(/^(\d{3})(\d{3})(\d{3})(\d{0,2})$/, '$1.$2.$3-$4');
+        else if (v.length > 6) v = v.replace(/^(\d{3})(\d{3})(\d*)$/, '$1.$2.$3');
+        else if (v.length > 3) v = v.replace(/^(\d{3})(\d*)$/, '$1.$2');
+      } else {
+        // CNPJ: 00.000.000/0000-00
+        v = v.slice(0, 14);
+        v = v.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{0,2})$/, '$1.$2.$3/$4-$5');
+      }
+      this.value = v;
+    });
+
+    // ── CEP lookup (ViaCEP) ───────────────────
+    document.getElementById('co-cep').addEventListener('input', function () {
+      let v = this.value.replace(/\D/g, '').slice(0, 8);
+      if (v.length > 5) v = v.slice(0, 5) + '-' + v.slice(5);
+      this.value = v;
+      if (v.replace(/\D/g, '').length === 8) lookupCep();
+    });
+
+    async function lookupCep(force = false) {
+      const raw = document.getElementById('co-cep').value.replace(/\D/g, '');
+      const status = document.getElementById('co-cep-status');
+      const checkEl = document.getElementById('co-shipping-check');
+      const result = document.getElementById('co-shipping-result');
+
+      if (raw.length !== 8) {
+        status.textContent = 'Digite um CEP válido.';
+        status.className = 'co-cep-status err';
+        return;
+      }
+
+      if (!force && document.getElementById('co-street').value.trim()) return;
+
+      const btn = document.getElementById('btn-co-cep');
+      btn.disabled = true;
+      status.textContent = 'Buscando endereço…';
+      status.className = 'co-cep-status';
+      checkEl.classList.add('scanning');
+      result.classList.remove('show');
+      result.innerHTML = '';
+      document.getElementById('co-ship-text').textContent = 'Verificando frete grátis…';
+
+      try {
+        const res = await fetch('https://viacep.com.br/ws/' + raw + '/json/');
+        const data = await res.json();
+
+        if (data.erro) {
+          status.textContent = 'CEP não encontrado.';
+          status.className = 'co-cep-status err';
+          return;
+        }
+
+        document.getElementById('co-street').value = data.logradouro || '';
+        document.getElementById('co-neighborhood').value = data.bairro || '';
+        document.getElementById('co-city').value = data.localidade || '';
+        document.getElementById('co-state').value = (data.uf || '').toUpperCase();
+        status.textContent = '✓ Endereço encontrado';
+        status.className = 'co-cep-status ok';
+
+        // Run free shipping "check" animation
+        simulateShippingCheck();
+
+      } catch (err) {
+        status.textContent = 'Erro ao buscar CEP. Preencha manualmente.';
+        status.className = 'co-cep-status err';
+      } finally {
+        btn.disabled = false;
+      }
+    }
+
+    function simulateShippingCheck() {
+      const checkEl = document.getElementById('co-shipping-check');
+      const result = document.getElementById('co-shipping-result');
+      checkEl.classList.add('scanning');
+      result.classList.remove('show');
+      document.getElementById('co-ship-text').textContent = 'Verificando frete grátis…';
+
+      setTimeout(() => {
+        // 99% chance of free shipping
+        const isFree = Math.random() < 0.99;
+        checkEl.classList.remove('scanning');
+        document.getElementById('co-ship-text').textContent = isFree ? 'Frete grátis disponível!' : 'Calculando melhor opção…';
+        result.classList.add('show');
+
+        if (isFree) {
+          result.innerHTML = '<span class="free"><svg class="svg-icon"><use href="#icon-check"/></svg> Frete GRÁTIS para sua região</span>';
+        } else {
+          const d = Math.floor(Math.random() * 5) + 3;
+          result.innerHTML = '<span class="free"><svg class="svg-icon"><use href="#icon-check"/></svg> Frete GRÁTIS para sua região</span>';
+        }
+      }, 1600);
+    }
+
+    // ── validation ────────────────────────────
+    function validateForm() {
+      let ok = true;
+
+      function check(fieldId, inputId, test) {
+        const field = document.getElementById(fieldId);
+        const val = document.getElementById(inputId).value.trim();
+        const pass = test(val);
+        field.classList.toggle('has-error', !pass);
+        if (!pass) ok = false;
+        return pass;
+      }
+
+      check('field-name', 'co-name', v => v.length >= 3);
+      check('field-email', 'co-email', v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v));
+      check('field-phone', 'co-phone', v => v.replace(/\D/g, '').length >= 10);
+      check('field-document', 'co-document', v => {
+        const d = v.replace(/\D/g, '');
+        return d.length === 11 || d.length === 14;
+      });
+      check('field-cep', 'co-cep', v => v.replace(/\D/g, '').length === 8);
+      check('field-state', 'co-state', v => v.length >= 2);
+      check('field-city', 'co-city', v => v.length >= 2);
+      check('field-neighborhood', 'co-neighborhood', v => v.length >= 2);
+      check('field-street', 'co-street', v => v.length >= 3);
+      check('field-number', 'co-number', v => v.length >= 1);
+
+      return ok;
+    }
+
+    // clear error on input
+    ['co-name','co-email','co-phone','co-document','co-cep','co-state','co-city','co-neighborhood','co-street','co-number'].forEach(id => {
+      document.getElementById(id).addEventListener('input', function () {
+        const map = { 'co-name': 'field-name', 'co-email': 'field-email', 'co-phone': 'field-phone', 'co-document': 'field-document' };
+        document.getElementById(map[id]).classList.remove('has-error');
+      });
+    });
+
+    // ── submit ────────────────────────────────
+    async function submitCheckout() {
+      if (!validateForm()) return;
+
+      const btn = document.getElementById('btn-co-submit');
+      btn.disabled = true;
+      coStep('co-step-loading');
+
+      const payload = {
+        name:     document.getElementById('co-name').value.trim(),
+        email:    document.getElementById('co-email').value.trim(),
+        phone:    document.getElementById('co-phone').value.replace(/\D/g, ''),
+        document: document.getElementById('co-document').value.replace(/\D/g, ''),
+        qty,
+        address: {
+          cep:         document.getElementById('co-cep').value.replace(/\D/g, ''),
+          state:       document.getElementById('co-state').value.trim(),
+          city:        document.getElementById('co-city').value.trim(),
+          neighborhood: document.getElementById('co-neighborhood').value.trim(),
+          street:      document.getElementById('co-street').value.trim(),
+          number:      document.getElementById('co-number').value.trim(),
+          complement:  document.getElementById('co-complement').value.trim(),
+        }
+      };
+
+      try {
+        const res = await fetch('/api/pix', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+
+        const data = await res.json();
+
+        if (!res.ok) {
+          throw new Error(data.message || 'Erro ao gerar cobrança.');
+        }
+
+        // Show Pix code
+        const pixCode = data.pix?.code || '';
+        const pixImg  = data.pix?.image || '';
+
+        document.getElementById('co-pix-code').textContent = pixCode || '—';
+
+        const qrImg = document.getElementById('co-qr-img');
+        const qrPh  = document.getElementById('co-qr-placeholder');
+        if (pixImg) {
+          qrImg.src = pixImg;
+          qrImg.style.display = 'block';
+          qrPh.style.display = 'none';
+        } else if (pixCode) {
+          // generate QR via free API fallback
+          qrImg.src = 'https://api.qrserver.com/v1/create-qr-code/?size=196x196&data=' + encodeURIComponent(pixCode);
+          qrImg.style.display = 'block';
+          qrPh.style.display = 'none';
+        }
+
+        // expiry countdown (30 min)
+        startExpireCountdown(30 * 60);
+
+        // store transactionId for potential status polling
+        window._coTransactionId = data.transactionId;
+
+        coStep('co-step-pix');
+
+      } catch (err) {
+        document.getElementById('co-error-msg').textContent =
+          err.message || 'Não foi possível gerar o Pix. Tente novamente em alguns instantes.';
+        coStep('co-step-error');
+      } finally {
+        btn.disabled = false;
+      }
+    }
+
+    // ── pix code copy ─────────────────────────
+    function copyPixCode() {
+      const code = document.getElementById('co-pix-code').textContent;
+      const btn  = document.getElementById('btn-copy-pix');
+      if (!code || code === '—') return;
+      navigator.clipboard.writeText(code).then(() => {
+        btn.textContent = '✓ COPIADO'; btn.classList.add('copied');
+        setTimeout(() => { btn.textContent = 'COPIAR'; btn.classList.remove('copied'); }, 3000);
+      }).catch(() => {
+        const sel = window.getSelection(), range = document.createRange();
+        range.selectNodeContents(document.getElementById('co-pix-code'));
+        sel.removeAllRanges(); sel.addRange(range);
+        btn.textContent = 'SELECIONAR'; btn.classList.add('copied');
+        setTimeout(() => { btn.textContent = 'COPIAR'; btn.classList.remove('copied'); }, 3000);
+      });
+    }
+
+    // ── retry ─────────────────────────────────
+    function retryCheckout() {
+      coStep('co-step-form');
+    }
+
+    // ── expiry countdown ──────────────────────
+    let _expireTimer;
+    function startExpireCountdown(seconds) {
+      clearInterval(_expireTimer);
+      const el = document.getElementById('co-expire-note');
+      function tick() {
+        if (seconds <= 0) {
+          el.textContent = 'Pix expirado. Feche e gere um novo.';
+          el.style.color = 'var(--red)';
+          clearInterval(_expireTimer);
+          return;
+        }
+        const m = String(Math.floor(seconds / 60)).padStart(2, '0');
+        const s = String(seconds % 60).padStart(2, '0');
+        el.textContent = 'Expira em ' + m + ':' + s;
+        seconds--;
+      }
+      tick();
+      _expireTimer = setInterval(tick, 1000);
+    }
+  </script>
+</body>
+</html>

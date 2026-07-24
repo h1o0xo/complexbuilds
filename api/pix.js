@@ -7,7 +7,7 @@
  */
 
 const SIGILOPAY_ENDPOINT = 'https://app.sigilopay.com.br/api/v1/gateway/pix/receive';
-const UNIT_PRICE = 197.90;
+const UNIT_PRICE = 127.90;
 
 function getBaseUrl(req) {
   const proto = req.headers['x-forwarded-proto'] || 'https';

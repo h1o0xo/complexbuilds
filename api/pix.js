@@ -7,7 +7,7 @@
  */
 
 const PUSHINPAY_ENDPOINT = 'http://api.pushinpay.com.br/api/pix/cashIn';
-const UNIT_PRICE = 127,90; // Preço em Reais
+const UNIT_PRICE = 127.90; // Preço em Reais
 
 function getBaseUrl(req) {
   const proto = req.headers['x-forwarded-proto'] || 'https';

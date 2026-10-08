@@ -1,18 +1,24 @@
 /**
- * Vercel Serverless Function — PushinPay Pix
+ * Vercel Serverless Function — SigiloPay Pix
  * POST /api/pix
  *
  * Body: { name, email, phone, document, qty }
- * Env:  PUSHINPAY_SECRET_TOKEN
+ * Env:  SIGILOPAY_PUBLIC_KEY, SIGILOPAY_SECRET_KEY
  */
 
-const PUSHINPAY_ENDPOINT = 'http://api.pushinpay.com.br/api/pix/cashIn';
-const UNIT_PRICE = 165; // Preço em Reais
+const SIGILOPAY_ENDPOINT = 'https://app.sigilopay.com.br/api/v1/gateway/pix/receive';
+const UNIT_PRICE = 200;
 
 function getBaseUrl(req) {
   const proto = req.headers['x-forwarded-proto'] || 'https';
   const host = req.headers['x-forwarded-host'] || req.headers['host'] || 'localhost';
   return `${proto}://${host}`;
+}
+
+function generateIdentifier() {
+  const ts = Date.now().toString(36).toUpperCase();
+  const rand = Math.random().toString(36).slice(2, 8).toUpperCase();
+  return `CB-${ts}-${rand}`;
 }
 
 export default async function handler(req, res) {
@@ -29,22 +35,24 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  // Agora usamos apenas o Token Secreto da PushinPay nas variáveis de ambiente
-  const secretToken = process.env.PUSHINPAY_SECRET_TOKEN;
+  const publicKey = process.env.SIGILOPAY_PUBLIC_KEY;
+  const secretKey = process.env.SIGILOPAY_SECRET_KEY;
 
-  if (!secretToken) {
-    console.error('[pix] Missing PUSHINPAY_SECRET_TOKEN');
+  if (!publicKey || !secretKey) {
+    console.error('[pix] Missing SIGILOPAY_PUBLIC_KEY or SIGILOPAY_SECRET_KEY');
     return res.status(500).json({
       errorCode: 'GATEWAY_NOT_CONFIGURED',
       message: 'Gateway de pagamento não configurado. Entre em contato com o suporte.',
     });
   }
 
-  const { name, email, phone, document, qty = 1 } = req.body || {};
+  const { name, email, phone, document, qty = 1, address = {} } = req.body || {};
 
-  // Validação de campos obrigatórios
+  // Validate required fields
   const missing = [];
   if (!name)     missing.push('name');
+  if (!email)    missing.push('email');
+  if (!phone)    missing.push('phone');
   if (!document) missing.push('document');
 
   if (missing.length) {
@@ -56,36 +64,45 @@ export default async function handler(req, res) {
   }
 
   const quantity = Math.max(1, Math.min(10, parseInt(qty, 10) || 1));
-  
-  // ATENÇÃO: PushinPay geralmente exige valores em CENTAVOS. 
-  // Se R\$ 200,00 deve virar 20000, multiplicamos por 100.
-  const amountInCentavos = Math.round(UNIT_PRICE * quantity * 100); 
-  
-  const callbackUrl = `${getBaseUrl(req)}/webhooks/pushinpay`;
+  const amount   = parseFloat((UNIT_PRICE * quantity).toFixed(2));
+  const identifier = generateIdentifier();
+  const callbackUrl = `${getBaseUrl(req)}/api/callback`;
 
-  // Mapeamento exato para o Payload solicitado pela PushinPay
+  const metadata = {
+    customerDoc: document,
+    phone,
+    ...(address.cep && { address: JSON.stringify(address) }),
+  };
+
   const payload = {
-    value: amountInCentavos,
-    webhook_url: callbackUrl,
-    expires_in: 3600, // 1 hora
-    description: `Pedido de ${name} — ${quantity}x Kit`,
-    player_name: name,
-    player_doc: document.replace(/\D/g, ''), // Remove pontos e traços do CPF
-    minor_verified: true
+    identifier,
+    amount,
+    client: { name, email, phone, document },
+    products: [
+      {
+        id: 'kit-ferramentas-226-complexbuilds',
+        name: 'Kit de Ferramentas 226 Peças com Parafusadeira 12V — ComplexBuilds',
+        quantity,
+        price: UNIT_PRICE,
+      },
+    ],
+    callbackUrl,
+    metadata,
   };
 
   let response;
   try {
-    response = await fetch(PUSHINPAY_ENDPOINT, {
+    response = await fetch(SIGILOPAY_ENDPOINT, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${secretToken}`, // Formato padrão Bearer Token
+        'x-public-key': publicKey,
+        'x-secret-key': secretKey,
       },
       body: JSON.stringify(payload),
     });
   } catch (err) {
-    console.error('[pix] Network error calling PushinPay:', err);
+    console.error('[pix] Network error calling SigiloPay:', err);
     return res.status(502).json({
       errorCode: 'GATEWAY_UNREACHABLE',
       message: 'Não foi possível conectar ao gateway de pagamento. Tente novamente.',
@@ -103,22 +120,23 @@ export default async function handler(req, res) {
   }
 
   if (!response.ok) {
-    console.error('[pix] PushinPay error:', response.status, data);
+    console.error('[pix] SigiloPay error:', response.status, data);
     return res.status(response.status).json({
-      errorCode: 'GATEWAY_ERROR',
+      errorCode: data.errorCode || 'GATEWAY_ERROR',
       message: data.message || 'Erro ao gerar cobrança Pix.',
-      details: data,
+      details: data.details,
     });
   }
 
-  // Retorna formatado exatamente como o seu Front-end antigo esperava receber
+  // Return only what the frontend needs
   return res.status(200).json({
-    transactionId: data.id, // ID da transação na PushinPay
-    status: data.status || 'processing',
-    amount: UNIT_PRICE * quantity,
+    transactionId: data.transactionId,
+    status: data.status,
+    identifier,
+    amount,
     pix: {
-      code:  data.qr_code || null,       // Linha "Copia e Cola" do Pix
-      image: data.qr_code_base64 || null // Imagem Base64 do QR Code
+      code:  data.pix?.code  || null,
+      image: data.pix?.image || null,
     },
   });
 }
